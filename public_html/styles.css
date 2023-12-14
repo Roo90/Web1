@@ -1,0 +1,51 @@
+li {
+    overflow-wrap: break-word; 
+}
+p {
+    font-size: 15px;
+    overflow-wrap: break-word; /*FUENTE: https://www.arsys.es/blog/overflow-wrap-romper-palabras*/
+}
+h2, h3 {
+    color: #116FD3; 
+}
+body {
+    font-family: monospace;
+}
+header, footer {
+    background-color: #D5DBDB; 
+    color: black;
+    padding: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 100%; /* Asegura que el html y body ocupen toda la altura de la ventana */
+    margin: 0; /* Remueve márgenes por defecto */
+}
+.container { /* FUENTE: https://www.ionos.es/digitalguide/paginas-web/creacion-de-paginas-web/css-grid-layout/*/
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Tres columnas: la del medio se ajusta al contenido (imagen) */
+    align-items: center;
+}
+img {
+    grid-column: 2; /* Coloca la imagen en la columna del medio */
+    margin: 0 15px; /* Espacio alrededor de la imagen */
+}
+.texto-izquierdo {
+    grid-column: 1; /* Texto izquierdo en la primera columna */
+    text-align: justify; /* Alinea el texto a la derecha */
+    align-self: flex-start; 
+    margin-left: 20px;
+}
+
+.texto-derecho {
+    grid-column: 3; /* Texto derecho en la tercera columna */
+    text-align: left;
+    align-self: flex-start; 
+    
+}
+.fa-brands {
+    margin-right: 10px;
+    text-decoration: none; 
+}
+a {
+    text-decoration: none; /* Remueve el subrayado de los iconos */
+}
